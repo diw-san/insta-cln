@@ -1,0 +1,43 @@
+.lg-icons{
+   @apply flex items-center gap-[15px]  
+}
+.lg-span{
+   @apply hidden lg:block pr-[3.5rem]
+}
+.lg-mg-icon{
+ @apply hidden md:block lg:block cursor-pointer 
+}
+.lg-icon-box{
+  @apply lg:h-[2.3rem] lg:w-[12rem]
+}
+
+.animatedSearchOut{
+  animation-duration: 0.5s;
+  animation-name: slideXout;
+}
+.animatedSearchIn{
+  animation-duration: 0.5s;
+  animation-name: slideXin;
+}
+
+@keyframes slideXout{
+   from{
+      transform: translateX(-100%);
+      opacity: 0;
+   }
+   to{
+      transform: translateX(0);
+      opacity: 1;
+      
+   }
+}
+@keyframes slideXin{
+   from{
+      transform: translateX(0);
+      opacity: 1;
+   }
+   to{
+      transform: translateX(-100%);
+      opacity: 0;
+   }
+}

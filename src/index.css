@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .navbarMore {
+    @apply size-5;
+  }
+  .navbarIconFlex {
+    @apply flex gap-3;
+  }
+  .navbarIcon{
+    @apply cursor-pointer scale-[1.6] bg-black/20 lg:bg-transparent p-1 rounded transition-all duration-150 ease-out
+  }
+  .lgNavbarIcon{
+    @apply p-[3px] rounded cursor-pointer transition-all duration-150 ease-out
+  }
+  .lgNavbarIcon:hover {
+   @apply bg-black/20
+  }
+  .instaIcon{
+    @apply transition-all duration-150 ease-out
+  }
+
+  .heartBounce {
+    animation-duration: 0.6s;
+    animation-name: faHeart; 
+  }
+
+  .hideCommentsScroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .profilePostIcons{
+    cursor: pointer;
+    color: #7a7979;
+    @apply flex items-center gap-1 pt-4 
+  }
+  .profilePostIcons.active{
+    color:black;
+   @apply border-black border-t-[1px]
+  }
+  
+}
+@keyframes faHeart {
+  from {
+    scale: 1.5;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

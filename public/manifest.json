@@ -1,0 +1,11 @@
+{
+  "short_name": "React App",
+  "name": "Create React App Sample",
+  "icons": [
+    {
+      "src": "insta.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ]
+}
