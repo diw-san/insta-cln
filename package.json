@@ -1,6 +1,7 @@
 {
   "name": "instagram-cln",
   "version": "0.1.0",
+   "homepage": "/",
   "private": true,
   "dependencies": {
     "@faker-js/faker": "^8.4.1",

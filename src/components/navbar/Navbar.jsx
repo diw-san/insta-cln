@@ -57,7 +57,10 @@ export default function Navbar() {
         <div className="flex w-full h-[3.3rem] px-[8px] items-center justify-between border-b-gray-300 border-[1.5px] ">
           <div className="flex items-center gap-2">
             <a href="/">
-              <img className="h-[42px]" src="https://links.papareact.com/ocw" />
+              <img
+                className="min-h-[26px] max-h-[42px]"
+                src="https://links.papareact.com/ocw"
+              />
             </a>
 
             <BsList

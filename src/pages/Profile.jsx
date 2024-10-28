@@ -39,7 +39,7 @@ export default function Profile() {
         }
       );
     }
-  }, [user, db]);
+  }, [user]);
 
   useEffect(
     () =>
@@ -105,7 +105,7 @@ export default function Profile() {
 
       {/*view image */}
       {onViewImage.isOn && (
-        <div className="fixed content-center w-full h-full bg-black/70 z-[70] ">
+        <div className="fixed content-center w-full h-full bg-black/90 z-[70] ">
           <CgClose
             onClick={() => setOnViewImage(false)}
             className="absolute right-1 top-1 size-7 text-white cursor-pointer"
@@ -118,7 +118,7 @@ export default function Profile() {
             />
             <BiTrashAlt
               onClick={() => setOndelete(true)}
-              className="absolute right-1 bottom-20 hover:bg-slate-500 text-red-500 border cursor-pointer bg-slate-600 rounded-full p-[2px] size-[30px]"
+              className="absolute right-2 bottom-20 hover:bg-slate-500 text-red-500 border cursor-pointer bg-slate-600 rounded-full p-[2px] size-[32px]"
             />
           </div>
         </div>

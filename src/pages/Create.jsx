@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import { BiSmile } from "react-icons/bi";
-import { CgClose } from "react-icons/cg";
 import { FaArrowLeft, FaPhotoFilm } from "react-icons/fa6";
 import { GoLocation } from "react-icons/go";
 import { MdVerified } from "react-icons/md";
@@ -104,13 +103,13 @@ export default function Create({ setOnCreate }) {
     }
   }, [selectedFile]);
 
-  console.log("Selected Pic" + selectedFile);
+  // console.log("Selected Pic" + selectedFile);
 
   return (
     <>
-      <div className="text-white">
+      <div className="text-white px-3 w-full  mx-auto">
         {!shareOn && (
-          <div className=" mx-auto w-[444px] h-[480px] bg-zinc-800 rounded-xl ">
+          <div className=" mx-auto min-w-[350px] max-w-[444px] h-[480px] bg-zinc-800 rounded-xl ">
             <span className="flex justify-center py-[10px] font-medium text-sm">
               Create new post
             </span>
@@ -193,7 +192,7 @@ export default function Create({ setOnCreate }) {
                       {caption.length}/{maxLength}
                     </span>
                   </div>
-                  <div className="flex flex-col gap-4 mt-3 text-[16px] font-[]">
+                  <div className="flex flex-col gap-4 mt-3 text-[16px] sm:font-[]">
                     <div className="flex justify-between">
                       <input
                         className="bg-transparent text-zinc-400 border-none focus:outline-none w-full"

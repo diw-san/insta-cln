@@ -123,10 +123,10 @@ export default function Post({
         </div>
       )}
 
-      <div className="mx-auto mt-1 w-[470px] h-[750px] border-b border-gray-300">
-        <div className="w-[450px] mx-auto h-[3rem]">
+      <div className=" mx-auto mt-1 max-w-[470px] h-[750px] border-b border-gray-300">
+        <div className=" w-full min-w-[370px] max-w-[450px] mx-auto h-[3rem]">
           {/*post top */}
-          <div className="flex justify-between items-center">
+          <div className=" flex justify-between items-center">
             <div className="flex items-center gap-1">
               <div className="h-10 w-10">
                 <img
@@ -146,7 +146,7 @@ export default function Post({
         </div>
 
         {/*post image */}
-        <div className="flex items-center w-[450px] mx-auto h-[530px]">
+        <div className="flex items-center min-w-[370px] max-w-[450px] mx-auto">
           <img
             src={image}
             alt={imageAlt}
@@ -155,7 +155,7 @@ export default function Post({
         </div>
 
         {/*post bottom */}
-        <div className="w-[450px] mx-auto">
+        <div className="min-w-[370px] max-w-[450px] mx-auto">
           <div className="flex items-center justify-between pt-[6px]">
             <div className="flex items-center gap-3">
               {like ? (
