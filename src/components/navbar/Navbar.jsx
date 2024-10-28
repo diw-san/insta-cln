@@ -58,13 +58,13 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             <a href="/">
               <img
-                className="min-h-[26px] max-h-[42px]"
+                className="min-h-[15px] max-h-[42px]"
                 src="https://links.papareact.com/ocw"
               />
             </a>
 
             <BsList
-              className="cursor-pointer size-6"
+              className="cursor-pointer size-6 mr-1"
               onClick={() => setOnMore(true)}
             />
           </div>
@@ -123,7 +123,7 @@ export default function Navbar() {
       {/****md, lg sidebar*****/}
 
       <div className=" hidden fixed bg-white left-0 border-r-gray-300 border-[1.5px] h-full p-1 md:block lg:block z-50">
-        <div className="p-3 pl-4 pr-2 h-full items-center ">
+        <div className="flex flex-col justify-evenly p-3 pl-4 pr-2 h-full items-center ">
           <div className="h-[40px]">
             <div className="hidden md:block lg:hidden instaIcon">
               <a href="/">
@@ -140,7 +140,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <div className="flex flex-col mt-[3rem] md:gap-4 lg:gap-[11px]">
+          <div className="h-1/2 relative flex flex-col justify-evenly lg:mt-[1.5rem] ">
             <div className=" lg-icon-box">
               <a href="/">
                 <div className="lg-icons lg:lgNavbarIcon group">
@@ -235,7 +235,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-5 mt-[8.4rem]">
+          <div className=" h-1/6 flex flex-col justify-evenly gap-5 mt-[8.4rem]">
             <div className=" lg-icon-box">
               <div className="lg-icons lg:lgNavbarIcon group">
                 <RiThreadsLine
